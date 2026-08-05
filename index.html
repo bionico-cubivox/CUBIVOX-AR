@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>CUBIVOX 3D — Realidade Aumentada</title>
+
+  <script
+    type="module"
+    src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js">
+  </script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #ffffff;
+      background:
+        radial-gradient(circle at top, #26384a 0%, #101820 50%, #05080b 100%);
+    }
+
+    header {
+      padding: 18px 16px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.52);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 27px;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      margin: 7px 0 0;
+      color: #cbd5df;
+    }
+
+    main {
+      width: min(100%, 900px);
+      margin: 0 auto;
+      padding: 16px;
+    }
+
+    .viewer-area {
+      position: relative;
+      overflow: hidden;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.06);
+      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.45);
+    }
+
+    model-viewer {
+      display: block;
+      width: 100%;
+      height: 70vh;
+      min-height: 520px;
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.08),
+          rgba(0, 0, 0, 0.18)
+        );
+    }
+
+    .ar-button {
+      position: absolute;
+      left: 50%;
+      bottom: 22px;
+      transform: translateX(-50%);
+
+      min-width: 230px;
+      padding: 15px 22px;
+
+      border: 0;
+      border-radius: 999px;
+
+      font-size: 17px;
+      font-weight: 700;
+
+      color: #111111;
+      background: #ffffff;
+
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.42);
+      cursor: pointer;
+    }
+
+    .ar-button:active {
+      transform: translateX(-50%) scale(0.97);
+    }
+
+    .ar-prompt {
+      position: absolute;
+      left: 50%;
+      bottom: 90px;
+      transform: translateX(-50%);
+
+      width: max-content;
+      max-width: 90%;
+      padding: 10px 14px;
+
+      color: #ffffff;
+      background: rgba(0, 0, 0, 0.78);
+      border-radius: 10px;
+
+      font-size: 14px;
+    }
+
+    .instructions {
+      margin-top: 16px;
+      padding: 16px;
+
+      line-height: 1.55;
+      color: #d8e0e8;
+
+      background: rgba(0, 0, 0, 0.35);
+      border-radius: 14px;
+    }
+
+    .compatibility {
+      margin-top: 12px;
+      padding: 12px 14px;
+
+      font-size: 14px;
+      line-height: 1.45;
+      color: #bfc9d3;
+
+      border-left: 4px solid #ffffff;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    footer {
+      padding: 18px;
+      text-align: center;
+      font-size: 13px;
+      color: #8f9aa5;
+    }
+
+    @media (max-width: 600px) {
+      model-viewer {
+        height: 68vh;
+        min-height: 480px;
+      }
+
+      header h1 {
+        font-size: 23px;
+      }
+
+      .ar-button {
+        width: calc(100% - 40px);
+        min-width: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>CUBIVOX 3D</h1>
+    <p>Veja o personagem no seu ambiente</p>
+  </header>
+
+  <main>
+
+    <div class="viewer-area">
+
+      <model-viewer
+        id="cubivoxViewer"
+
+        src="modelo.glb"
+        ios-src="modelo.usdz"
+
+        alt="Modelo tridimensional da CUBIVOX 3D"
+
+        camera-controls
+        touch-action="pan-y"
+
+        auto-rotate
+        rotation-per-second="18deg"
+
+        shadow-intensity="1.2"
+        shadow-softness="0.8"
+
+        environment-image="neutral"
+        exposure="1"
+
+        ar
+        ar-modes="webxr scene-viewer quick-look"
+
+        ar-placement="floor"
+        ar-scale="auto"
+
+        interaction-prompt="auto"
+        loading="eager"
+        reveal="auto">
+
+        <button
+          class="ar-button"
+          slot="ar-button"
+          type="button">
+          📱 Ver no meu ambiente
+        </button>
+
+        <div
+          class="ar-prompt"
+          slot="ar-prompt">
+          Mova o celular lentamente para encontrar uma superfície
+        </div>
+
+      </model-viewer>
+
+    </div>
+
+    <div class="instructions">
+      <strong>Como usar:</strong><br>
+      Toque em “Ver no meu ambiente”, permita o acesso à câmera e movimente
+      o celular lentamente. Quando o chão ou a mesa for reconhecido, toque
+      na superfície para posicionar o objeto.
+    </div>
+
+    <div class="compatibility">
+      Android utiliza o arquivo <strong>modelo.glb</strong> pelo WebXR ou
+      Google Scene Viewer. O iPhone utiliza o arquivo
+      <strong>modelo.usdz</strong> pelo AR Quick Look.
+    </div>
+
+  </main>
+
+  <footer>
+    CUBIVOX 3D — Ideias ganham formas!
+  </footer>
+
+</body>
+</html>
