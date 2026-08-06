@@ -10,11 +10,5 @@
         "Slug":  "lumen",
         "Cover":  "capas/lumen.png",
         "Viewer":  "../models/lumen/"
-    },
-    {
-        "Name":  "MODELO",
-        "Slug":  "modelo",
-        "Cover":  "",
-        "Viewer":  "../models/modelo/"
     }
 ]
