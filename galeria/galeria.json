@@ -8,7 +8,7 @@
     {
         "Name":  "Lúmen",
         "Slug":  "lumen",
-        "Cover":  "",
+        "Cover":  "capas/lumen.png",
         "Viewer":  "../models/lumen/"
     },
     {
