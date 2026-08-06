@@ -1,0 +1,20 @@
+﻿[
+    {
+        "Name":  "Leão Guerreiro",
+        "Slug":  "leao-guerreiro",
+        "Cover":  "capas/leao-guerreiro.png",
+        "Viewer":  "../models/leao-guerreiro/"
+    },
+    {
+        "Name":  "Lúmen",
+        "Slug":  "lumen",
+        "Cover":  "capas/lumen.png",
+        "Viewer":  "../models/lumen/"
+    },
+    {
+        "Name":  "MODELO",
+        "Slug":  "modelo",
+        "Cover":  "",
+        "Viewer":  "../models/modelo/"
+    }
+]
