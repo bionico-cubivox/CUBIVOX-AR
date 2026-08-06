@@ -1,0 +1,8 @@
+﻿{
+    "name":  "Lúmen",
+    "slug":  "lumen",
+    "glb":  "models/lumen/model.glb",
+    "usdz":  "models/lumen/model.usdz",
+    "viewer":  "models/lumen/",
+    "updatedAt":  "2026-08-06T11:04:19"
+}
