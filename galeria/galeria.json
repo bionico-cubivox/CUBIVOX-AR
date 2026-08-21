@@ -6,12 +6,6 @@
         "Viewer":  "../models/flamengo/"
     },
     {
-        "Name":  "Lúmen",
-        "Slug":  "lumen",
-        "Cover":  "capas/lumen.png",
-        "Viewer":  "../models/lumen/"
-    },
-    {
         "Name":  "Mascote São Paulo",
         "Slug":  "mascote-sao-paulo",
         "Cover":  "",
