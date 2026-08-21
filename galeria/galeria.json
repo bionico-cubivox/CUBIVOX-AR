@@ -1,5 +1,11 @@
 ﻿[
     {
+        "Name":  "Flamengo",
+        "Slug":  "flamengo",
+        "Cover":  "",
+        "Viewer":  "../models/flamengo/"
+    },
+    {
         "Name":  "Leão Guerreiro",
         "Slug":  "leao-guerreiro",
         "Cover":  "capas/leao-guerreiro.png",
@@ -10,5 +16,11 @@
         "Slug":  "lumen",
         "Cover":  "capas/lumen.png",
         "Viewer":  "../models/lumen/"
+    },
+    {
+        "Name":  "Lúmen",
+        "Slug":  "urubu",
+        "Cover":  "",
+        "Viewer":  "../models/urubu/"
     }
 ]
