@@ -1,0 +1,8 @@
+﻿{
+    "name":  "Flamengo",
+    "slug":  "flamengo",
+    "glb":  "models/flamengo/model.glb",
+    "usdz":  "models/flamengo/model.usdz",
+    "viewer":  "models/flamengo/",
+    "updatedAt":  "2026-08-21T13:37:29"
+}
