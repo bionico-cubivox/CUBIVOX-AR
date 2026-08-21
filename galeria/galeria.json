@@ -16,11 +16,5 @@
         "Slug":  "mascote-sao-paulo",
         "Cover":  "",
         "Viewer":  "../models/mascote-sao-paulo/"
-    },
-    {
-        "Name":  "Lúmen",
-        "Slug":  "urubu",
-        "Cover":  "",
-        "Viewer":  "../models/urubu/"
     }
 ]
