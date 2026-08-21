@@ -6,16 +6,16 @@
         "Viewer":  "../models/flamengo/"
     },
     {
-        "Name":  "Leão Guerreiro",
-        "Slug":  "leao-guerreiro",
-        "Cover":  "capas/leao-guerreiro.png",
-        "Viewer":  "../models/leao-guerreiro/"
-    },
-    {
         "Name":  "Lúmen",
         "Slug":  "lumen",
         "Cover":  "capas/lumen.png",
         "Viewer":  "../models/lumen/"
+    },
+    {
+        "Name":  "Mascote São Paulo",
+        "Slug":  "mascote-sao-paulo",
+        "Cover":  "",
+        "Viewer":  "../models/mascote-sao-paulo/"
     },
     {
         "Name":  "Lúmen",
