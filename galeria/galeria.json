@@ -1,14 +1,6 @@
-﻿[
-    {
-        "Name":  "Flamengo",
-        "Slug":  "flamengo",
-        "Cover":  "",
-        "Viewer":  "../models/flamengo/"
-    },
-    {
-        "Name":  "Mascote São Paulo",
-        "Slug":  "mascote-sao-paulo",
-        "Cover":  "",
-        "Viewer":  "../models/mascote-sao-paulo/"
-    }
-]
+﻿{
+    "Name":  "Flamengo",
+    "Slug":  "flamengo",
+    "Cover":  "",
+    "Viewer":  "../models/flamengo/"
+}
