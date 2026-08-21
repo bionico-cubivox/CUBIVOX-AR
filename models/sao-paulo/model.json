@@ -1,0 +1,8 @@
+﻿{
+    "name":  "São Paulo",
+    "slug":  "sao-paulo",
+    "glb":  "models/sao-paulo/model.glb",
+    "usdz":  "models/sao-paulo/model.usdz",
+    "viewer":  "models/sao-paulo/",
+    "updatedAt":  "2026-08-21T15:20:40"
+}
